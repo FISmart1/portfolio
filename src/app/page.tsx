@@ -222,7 +222,7 @@ export default function Page() {
       >
         DM on LinkedIn
       </Link>
-      {" "} and I'll respond whenever I can.
+      and I'll respond whenever I can.
     </p>
     <div className="flex justify-center gap-4 mt-6">
       {Object.entries(DATA.contact.social).map(([key, social]) => (
