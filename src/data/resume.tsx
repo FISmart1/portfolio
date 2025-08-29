@@ -59,15 +59,9 @@ export const DATA = {
       },
       instagram: {
         name: "Instagram",
-        url: "#",
+        url: "https://www.instagram.com/nyusufansyah/",
         icon: Instagram,
 
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "#",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
