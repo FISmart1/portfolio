@@ -16,19 +16,28 @@ export const DATA = {
     "React",
     "Next.js",
     "Typescript",
+    "JavaScript",
+    "Express.js",
     "Node.js",
     "Python",
     "MySql",
     "Proxmox",
-    "Microsoft Office",
     "PHP",
     "Laravel",
     "Canva",
     "C++",
+    "Git",
+    "GitHub",
+    "Microsoft Office",
+    "TailwindCSS",
+    "Bootstrap",
+    "Figma",
+    "Capcut"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "https://best.smktibazma.com", icon: "/best.png", label: "BEST" },
+    { href: "https://chiper.smktibazma.com", icon: "/sekolah.png", label: "Chiper bazma" },
   ],
   contact: {
     email: "yusufftibazma@gmail.com",
@@ -199,7 +208,7 @@ export const DATA = {
       description:
         "Certified in Junior Multimedia Design covering essential skills in graphic design, video editing, animation, and digital media production. This certification verifies competency in applying creative concepts, using design software tools, and producing multimedia content that meets industry standards.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+        "/lsp.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
@@ -210,7 +219,7 @@ export const DATA = {
       description:
         "Recognized for consistent academic achievements and outstanding manners, serving as a role model for fellow students.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
+        "/sekolah.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
@@ -222,7 +231,7 @@ export const DATA = {
         "Certified in JavaScript (Basic) by HackerRank, demonstrating proficiency in fundamental concepts such as data types, functions, loops, conditional statements, and problem-solving using JavaScript.",
       icon: "public",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
+        "/rank.png",
       links: [],
     },
     {
@@ -232,7 +241,7 @@ export const DATA = {
       description:
         "Awarded a gold medal and ranked in the Top 10 at the OCC competition, recognized for excellence in informatika",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+        "/gold.png",
       links: [
       ],
     },

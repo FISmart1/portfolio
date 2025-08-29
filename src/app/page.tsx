@@ -12,6 +12,7 @@ import Markdown from "react-markdown";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section
@@ -221,7 +222,7 @@ export default function Page() {
         className="text-primary hover:underline"
       >
         DM on LinkedIn
-      </Link>
+      </Link>{" "} 
       and I&apos;ll respond whenever I can.
     </p>
     <div className="flex justify-center gap-4 mt-6">

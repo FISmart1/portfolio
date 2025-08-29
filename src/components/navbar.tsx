@@ -7,6 +7,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Image from "next/image";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -21,14 +22,19 @@ export default function Navbar() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href={item.href}
-                  className={cn(
-                    buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-12"
-                  )}
-                >
-                  <item.icon className="size-4" />
-                </Link>
+  href={item.href}
+  className={cn(
+    buttonVariants({ variant: "ghost", size: "icon" }),
+    "size-12"
+  )}
+>
+  {typeof item.icon === "string" ? (
+    <Image src={item.icon} alt={item.label} width={20} height={20} />
+  ) : (
+    <item.icon className="size-4" />
+  )}
+</Link>
+
               </TooltipTrigger>
               <TooltipContent>
                 <p>{item.label}</p>
