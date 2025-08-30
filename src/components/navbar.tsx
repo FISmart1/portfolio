@@ -7,6 +7,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler"
 import Image from "next/image";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
@@ -68,9 +69,7 @@ export default function Navbar() {
         <Separator orientation="vertical" className="h-full py-2" />
         <DockIcon>
           <Tooltip>
-            <TooltipTrigger asChild>
-              <ModeToggle />
-            </TooltipTrigger>
+            <AnimatedThemeToggler className="p-3 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-800 transition" />
             <TooltipContent>
               <p>Theme</p>
             </TooltipContent>
