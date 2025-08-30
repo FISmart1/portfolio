@@ -14,6 +14,7 @@ import { Confetti } from "@/components/magicui/confetti";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -21,6 +22,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
 
+    <ScrollProgress />
 
       <SmoothCursor />
 
