@@ -14,7 +14,6 @@ import { Confetti } from "@/components/magicui/confetti";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
-import { GridBeams } from "@/components/magicui/grid-beams";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
