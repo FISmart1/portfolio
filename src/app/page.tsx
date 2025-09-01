@@ -16,6 +16,7 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import { Instagram } from 'lucide-react';
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -187,7 +188,7 @@ export default function Page() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            <ul className="mb-4 ml-4 divide-dashed border-l">
               {DATA.hackathons.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
@@ -218,10 +219,10 @@ export default function Page() {
           <p className="text-muted-foreground text-lg">
             Want to chat? Just shoot me a{" "}
             <Link
-              href={DATA.contact.social.LinkedIn.url}
+              href={DATA.contact.social.instagram.url}
               className="text-primary hover:underline"
             >
-              DM on LinkedIn
+              DM on Instagram
             </Link>{" "}
             and I&apos;ll respond whenever I can.
           </p>

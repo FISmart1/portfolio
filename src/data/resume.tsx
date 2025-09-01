@@ -164,9 +164,33 @@ export const DATA = {
         "",
     },
     {
+      title: "Platform Berbagi",
+      href: "https://berbagi.smktibazma.com",
+      dates: "August 2025 - August 2025",
+      active: true,
+      description:
+        "The website berbagi.smktibazma.com is a digital platform to promote transparency and accuracy in the distribution of social assistance. Through this system, recipients can be verified using the QR code printed on the coupons they distribute, reducing the potential for errors or data misuse.",
+      technologies: [
+        "PHP",
+        "Laravel",
+        "TailwindCSS",
+        "MySql",
+
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://berbagi.smktibazma.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/berbagi.png",
+      video: "",
+    },
+    {
       title: "Bazma Chiper",
-      href: "https://magicui.design",
-      dates: "Oktober 2024 - Desember 2024",
+      href: "https://chiper.smktibazma.com/",
+      dates: "OCtober 2024 - December 2024",
       active: true,
       description:
         "Bazma Chiper is a web-based platform designed to encrypt and decrypt text messages. Using a special cipher-like encoding system, Bazma Chiper helps maintain information confidentiality and prevent unauthorized access. This website can be used as a learning tool for cryptography and as a practical tool for protecting digital messages.",
@@ -174,7 +198,6 @@ export const DATA = {
         "React.js",
         "Javascript",
         "TailwindCSS",
-        "Node.js",
 
       ],
       links: [
@@ -182,11 +205,6 @@ export const DATA = {
           type: "Website",
           href: "https://chiper.smktibazma.com/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/chiper.png",
