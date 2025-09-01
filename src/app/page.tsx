@@ -3,6 +3,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { HeroSection } from "@/components/hero-section-6";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -43,34 +44,7 @@ export default function Page() {
         ease={60}
         size={1}
       />
-      <section
-        id="hero"
-        className="relative flex items-center justify-center py-20  from-background via-background to-muted/30"
-      >
-        
-        <div className="mx-auto w-full max-w-3xl space-y-8 text-center">
-
-          <div className="flex flex-col items-center gap-6">
-
-            <BlurFade delay={BLUR_FADE_DELAY}>
-
-              <Avatar className="size-32 border-4 border-background shadow-lg ring-4 ring-primary/20">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
-            <AuroraText className="text-4xl font-bold sm:text-5xl lg:text-6xl text-center">
-  {`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-</AuroraText>
-
-            <BlurFadeText
-              className="max-w-[600px] text-lg text-muted-foreground"
-              delay={BLUR_FADE_DELAY}
-              text={DATA.description}
-            />
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       <section id="about" className="px-6">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
