@@ -18,11 +18,31 @@ import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Instagram } from 'lucide-react';
 import { Highlighter } from "@/components/magicui/highlighter";
+import { TestimonialsColumn, Testimonial } from "@/components/testimoni";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-
+  const data: Testimonial[] = [
+    {
+      name: "M. Dzikri Fauzan, S.Kom",
+      role: "Ketua Program Studi SIJA SMK TI BAZMA",
+      text: "Bangga banget sama Nur Yusuf Ferdiansyah, siswa SIJA SMK TI BAZMA, yang telah berhasil membuat sistem katalog talent ini. Semoga terus semangat menciptakan karya-karya yang berdampak, baik untuk sekolah maupun lingkungan sekitar. Terima kasih juga kepada Bu Bila yang telah membimbing.",
+      image: "/avatars/alice.jpg",
+    },
+    {
+      name: "Ristina Eka Salsabila, S.Kom",
+      role: "Designer",
+      text: "Creative and innovative solutions.",
+      image: "/avatars/bob.jpg",
+    },
+    {
+      name: "Fatimah Azzahra, S.Si",
+      role: "Designer",
+      text: "Yusuf ngerjain BEST tuh gak main-main. Akhirnya ada tempat keren buat nampilin talent anak-anak SMK TI BAZMA—dan bukan cuma buat pamer, tapi beneran bisa nyambung ke dunia professional. Real project, real impact. Proud of you guys!",
+      image: "/avatars/bob.jpg",
+    },
+  ];
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
 
@@ -60,7 +80,7 @@ export default function Page() {
                 As a vocational high school student in Information Technology
               </Highlighter>, I have developed skills in <Highlighter color="#ec4899" action="underline">
                 web application
-              development, database management, and system integration
+                development, database management, and system integration
               </Highlighter>. Through <Highlighter action="underline" color="#6366f1">school projects</Highlighter> and <Highlighter action="underline" color="#6366f1">independent practice</Highlighter>,
               I am experienced in creating <Highlighter action="underline" color="#60a5fa">efficient and user-friendly digital solutions</Highlighter>. I am committed to continuously
               improving my abilities to make the <Highlighter action="underline" color="#ec4899">best contribution to organizations and teams</Highlighter>.
@@ -222,6 +242,20 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="testimonials" className="px-6">
+        <div className="p-5 text-center mb-8">
+          <h2 className="text-3xl font-bold sm:text-5xl">
+            Review
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            The comments and feedback I received reminded me: every project, no matter how small, has the potential to make an impact. This isn't the end, but rather the beginning of continued improvement.
+          </p>
+        </div>
+        <div className="h-[400px] overflow-hidden relative flex gap-6 px-6 py-8 mt-8 w-[90%]">
+          <TestimonialsColumn testimonials={data} duration={12} />
+        </div>
+      </section>
+
       <section
         id="contact"
         className="relative py-20  to-background"
