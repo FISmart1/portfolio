@@ -17,6 +17,8 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Instagram } from 'lucide-react';
+import { Highlighter } from "@/components/magicui/highlighter";
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -24,7 +26,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
 
-    <ScrollProgress />
+      <ScrollProgress />
 
       <SmoothCursor />
 
@@ -53,7 +55,19 @@ export default function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="rounded-2xl border bg-card/50 p-6 shadow-sm backdrop-blur-sm">
-          <TypingAnimation className="prose prose-neutral dark:prose-invert max-w-none text-sm text-muted-foreground">{DATA.summary}</TypingAnimation>
+            <p className="prose prose-neutral dark:prose-invert max-w-none text-lg text-black dark:text-white">
+              <Highlighter action="highlight" color="#60a5fa">
+                As a vocational high school student in Information Technology
+              </Highlighter>, I have developed skills in <Highlighter color="#ec4899" action="underline">
+                web application
+              development, database management, and system integration
+              </Highlighter>. Through <Highlighter action="underline" color="#6366f1">school projects</Highlighter> and <Highlighter action="underline" color="#6366f1">independent practice</Highlighter>,
+              I am experienced in creating <Highlighter action="underline" color="#60a5fa">efficient and user-friendly digital solutions</Highlighter>. I am committed to continuously
+              improving my abilities to make the <Highlighter action="underline" color="#ec4899">best contribution to organizations and teams</Highlighter>.
+            </p>
+
+
+
 
           </div>
         </BlurFade>
@@ -178,10 +192,10 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  As Head of the BEST Website Developer 
-                  Team at SMK TI BAZMA, I led the creation of 
-                  the school’s official website. Working with peers, 
-                  we turned ideas into a functional platform, while I 
+                  As Head of the BEST Website Developer
+                  Team at SMK TI BAZMA, I led the creation of
+                  the school’s official website. Working with peers,
+                  we turned ideas into a functional platform, while I
                   sharpened both my technical and leadership skills.
                 </p>
               </div>
