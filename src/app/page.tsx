@@ -248,7 +248,7 @@ export default function Page() {
             Review
           </h2>
           <p className="text-muted-foreground text-lg">
-            The comments and feedback I received reminded me: every project, no matter how small, has the potential to make an impact. This isn't the end, but rather the beginning of continued improvement.
+            The comments and feedback I received reminded me: every project, no matter how small, has the potential to make an impact. This is not the end, but rather the beginning of continued improvement.
           </p>
         </div>
         <div className="h-[400px] overflow-hidden relative flex gap-6 px-6 py-8 mt-8 w-[90%]">
