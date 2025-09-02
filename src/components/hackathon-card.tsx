@@ -31,7 +31,7 @@ export function HackathonCard({
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex flex-1 flex-col justify-start gap-1">
+      <div className="flex flex-1 flex-col justify-start gap-1 ">
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}

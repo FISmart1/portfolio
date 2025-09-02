@@ -6,6 +6,8 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
+import { Highlighter } from "@/components/magicui/highlighter";
+
 
 const menuItems = [
   { name: 'Features', href: '#' },
@@ -26,20 +28,20 @@ export function HeroSection() {
             {/* TEKS */}
             <div className="max-w-2xl text-center lg:text-left">
               <AuroraText className="text-6xl font-extrabold tracking-tight">Nur Yusuf Ferdiansyah</AuroraText>
-              <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                Student Developer turned Team Leader. I love creating digital solutions
-                and leading people to grow. Active in school organizations and community projects.
+              <p className="mt-6 text-lg text-black dark:text-white leading-relaxed mr-1">
+                <Highlighter action="highlight" color="#60a5fa">Student Developer & Emerging Team Leader</Highlighter> who loves building digital
+                solutions and empowering others. Active contributor in <Highlighter action="underline" color="#ec4899">school organizations and community projects</Highlighter>.
               </p>
 
               {/* CTA */}
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
                 <a
-  href="/cv.pdf"
-  download="CV-Yusuf.pdf"
-  className="rounded-lg bg-white px-6 py-3 text-black font-semibold shadow-md hover:bg-transparent hover:text-white transition"
->
-  Download CV
-</a>
+                  href="/cv.pdf"
+                  download="CV-Yusuf.pdf"
+                  className="rounded-lg bg-black px-6 py-3 text-white dark:bg-white dark:text-black font-semibold shadow-md hover:bg-transparent hover:text-white transition"
+                >
+                  Download CV
+                </a>
 
 
 

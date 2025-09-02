@@ -55,7 +55,7 @@ export default function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="rounded-2xl border bg-card/50 p-6 shadow-sm backdrop-blur-sm">
-            <p className="prose prose-neutral dark:prose-invert max-w-none text-lg text-black dark:text-white">
+            <p className="prose prose-neutral dark:prose-invert max-w-none text-lg text-black dark:text-white text-center">
               <Highlighter action="highlight" color="#60a5fa">
                 As a vocational high school student in Information Technology
               </Highlighter>, I have developed skills in <Highlighter color="#ec4899" action="underline">
