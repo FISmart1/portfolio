@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 import { Highlighter } from "@/components/magicui/highlighter";
+import ProfileCard from '@/components/ProfileCard'
 
 
 const menuItems = [
@@ -27,7 +28,10 @@ export function HeroSection() {
 
             {/* TEKS */}
             <div className="max-w-2xl text-center lg:text-left">
-              <AuroraText className="text-6xl font-extrabold tracking-tight">Nur Yusuf Ferdiansyah</AuroraText>
+              <AuroraText className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+  Nur Yusuf Ferdiansyah
+</AuroraText>
+
               <p className="mt-6 text-lg text-black dark:text-white leading-relaxed mr-1">
                 <Highlighter action="highlight" color="#60a5fa">Student Developer & Emerging Team Leader</Highlighter> who loves building digital
                 solutions and empowering others. Active contributor in <Highlighter action="underline" color="#ec4899">school organizations and community projects</Highlighter>.
@@ -54,8 +58,8 @@ export function HeroSection() {
               </div>
 
               {/* Why Choose Me */}
-              <div className="mt-12">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+              <div className="mt-12 mb-11">
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-white ">
                   Why Choose Me?
                 </h2>
                 <div className="mt-4 flex flex-wrap gap-4">
@@ -73,18 +77,18 @@ export function HeroSection() {
             </div>
 
             {/* GAMBAR */}
-            <NeonGradientCard className="mt-12 lg:mt-0 lg:w-[500px] flex justify-center">
-              <img
-                className="w-72 rounded-2xl shadow-xl dark:hidden"
-                src="/me.png"
-                alt="Profile"
-              />
-              <img
-                className="w-72 rounded-2xl shadow-xl hidden dark:block"
-                src="/me2.jpeg"
-                alt="Profile Dark"
-              />
-            </NeonGradientCard>
+            <ProfileCard
+              name="Nur Yusuf Ferdiansyah"
+              title="Fullstack Developer & Team Leader"
+              handle="nyusufansyah"
+              status="Online"
+              contactText="Contact Me"
+              avatarUrl="./me2.jpeg"
+              showUserInfo={true}
+              enableTilt={true}
+              enableMobileTilt={false}
+              onContactClick={() => window.open("https://www.instagram.com/nyusufansyah", "_blank")}
+            />
 
           </div>
         </section>

@@ -20,6 +20,8 @@ import { Instagram } from 'lucide-react';
 import { Highlighter } from "@/components/magicui/highlighter";
 import { TestimonialsColumn, Testimonial } from "@/components/testimoni";
 import CircularGallery from '@/components/CircularGallery'
+import Carousel from '@/components/Carousel'
+import ProfileCard from '@/components/ProfileCard'
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -28,7 +30,7 @@ export default function Page() {
     {
       name: "M. Dzikri Fauzan, S.Kom",
       role: "Ketua Program Studi SIJA SMK TI BAZMA",
-      text: "Bangga banget sama Nur Yusuf Ferdiansyah, siswa SIJA SMK TI BAZMA, yang telah berhasil membuat sistem katalog talent ini. Semoga terus semangat menciptakan karya-karya yang berdampak, baik untuk sekolah maupun lingkungan sekitar. Terima kasih juga kepada Bu Bila yang telah membimbing.",
+      text: "",
       image: "/avatars/alice.jpg",
     },
     {
@@ -40,7 +42,7 @@ export default function Page() {
     {
       name: "Fatimah Azzahra, S.Si",
       role: "Designer",
-      text: "Yusuf ngerjain BEST tuh gak main-main. Akhirnya ada tempat keren buat nampilin talent anak-anak SMK TI BAZMA—dan bukan cuma buat pamer, tapi beneran bisa nyambung ke dunia professional. Real project, real impact. Proud of you guys!",
+      text: "",
       image: "/avatars/bob.jpg",
     },
   ];
@@ -244,22 +246,29 @@ export default function Page() {
         </div>
       </section>
       <section id="testimonials" className="px-6">
-        <div className="p-5 text-center mb-8">
-          <h2 className="text-3xl font-bold sm:text-5xl">
-            Review
-          </h2>
+        <div className="p-5 text-center mb-8 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold sm:text-5xl">Review</h2>
           <p className="text-muted-foreground text-lg">
             The comments and feedback I received reminded me: every project, no matter how small, has the potential to make an impact. This is not the end, but rather the beginning of continued improvement.
           </p>
         </div>
-        <div className="h-[400px] overflow-hidden relative flex gap-6 px-6 py-8 mt-8 w-[90%]">
-          <TestimonialsColumn testimonials={data} duration={12} />
-        </div>
+
+        <div style={{  position: 'relative' }}>
+  <Carousel
+    baseWidth={800}
+    autoplay={true}
+    autoplayDelay={3000}
+    pauseOnHover={true}
+    loop={true}
+    round={false}
+  />
+</div>
       </section>
-      <section className=" w-full py-12" id="gallery">
-        <h1 className="text-center text-3xl font-bold sm:text-5xl">Gallery</h1>
+
+      <section className=" w-full py-[10%]" id="gallery">
+        <h1 className="text-center text-3xl font-bold sm:text-5xl">My Gallery</h1>
         <div style={{ height: '600px', position: 'relative' }}>
-          <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} />
+          <CircularGallery bend={3} borderRadius={0.05} scrollEase={0.02} />
         </div>
       </section>
 

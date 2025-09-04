@@ -218,7 +218,6 @@ class Media {
       plane: this.plane,
       renderer: this.renderer,
       text: this.text,
-      textColor: this.textColor,
       fontFamily: this.font
     });
   }
@@ -288,7 +287,6 @@ class App {
     {
       items,
       bend,
-      textColor = '#ffffff',
       borderRadius = 0,
       font = 'bold 30px Figtree',
       scrollSpeed = 2,
@@ -305,7 +303,7 @@ class App {
     this.createScene();
     this.onResize();
     this.createGeometry();
-    this.createMedias(items, bend, textColor, borderRadius, font);
+    this.createMedias(items, bend, borderRadius, font);
     this.update();
     this.addEventListeners();
   }
@@ -453,7 +451,6 @@ class App {
 export default function CircularGallery({
   items,
   bend = 3,
-  textColor = "#ffffff",
   borderRadius = 0.05,
   font = "bold 30px Figtree",
   scrollSpeed = 2,
@@ -465,7 +462,6 @@ export default function CircularGallery({
     const app = new App(containerRef.current, {
       items,
       bend,
-      textColor,
       borderRadius,
       font,
       scrollSpeed,
@@ -474,7 +470,7 @@ export default function CircularGallery({
     return () => {
       app.destroy();
     };
-  }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
+  }, [items, bend, borderRadius, font, scrollSpeed, scrollEase]);
 
-  return <div className="circular-gallery" ref={containerRef} />;
+  return <div className="circular-gallery text-black dark:text-white" ref={containerRef} />;
 }
