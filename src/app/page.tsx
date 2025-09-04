@@ -19,6 +19,7 @@ import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Instagram } from 'lucide-react';
 import { Highlighter } from "@/components/magicui/highlighter";
 import { TestimonialsColumn, Testimonial } from "@/components/testimoni";
+import CircularGallery from '@/components/CircularGallery'
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -253,6 +254,12 @@ export default function Page() {
         </div>
         <div className="h-[400px] overflow-hidden relative flex gap-6 px-6 py-8 mt-8 w-[90%]">
           <TestimonialsColumn testimonials={data} duration={12} />
+        </div>
+      </section>
+      <section className=" w-full py-12" id="gallery">
+        <h1 className="text-center text-3xl font-bold sm:text-5xl">Gallery</h1>
+        <div style={{ height: '600px', position: 'relative' }}>
+          <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} />
         </div>
       </section>
 
