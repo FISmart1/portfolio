@@ -449,7 +449,7 @@ class App {
 }
 
 export default function CircularGallery({
-  items,
+  items = [],
   bend = 3,
   borderRadius = 0.05,
   font = "bold 30px Figtree",
