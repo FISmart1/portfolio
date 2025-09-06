@@ -1,49 +1,25 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { HeroSection } from "@/components/hero-section-6";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
-import Markdown from "react-markdown";
 import { Particles } from "@/components/magicui/particles";
 import { Confetti } from "@/components/magicui/confetti";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
-import { AuroraText } from "@/components/magicui/aurora-text";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Instagram } from 'lucide-react';
 import { Highlighter } from "@/components/magicui/highlighter";
-import { TestimonialsColumn, Testimonial } from "@/components/testimoni";
-import CircularGallery from '@/components/CircularGallery'
-import Carousel from '@/components/Carousel'
-import ProfileCard from '@/components/ProfileCard'
+import TestimonialSection from "@/components/testimoni"
+import RollingGallery from '@/components/RollingGallery'
+
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-  const data: Testimonial[] = [
-    {
-      name: "M. Dzikri Fauzan, S.Kom",
-      role: "Ketua Program Studi SIJA SMK TI BAZMA",
-      text: "",
-      image: "/avatars/alice.jpg",
-    },
-    {
-      name: "Ristina Eka Salsabila, S.Kom",
-      role: "Designer",
-      text: "Creative and innovative solutions.",
-      image: "/avatars/bob.jpg",
-    },
-    {
-      name: "Fatimah Azzahra, S.Si",
-      role: "Designer",
-      text: "",
-      image: "/avatars/bob.jpg",
-    },
-  ];
+  
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
 
@@ -244,35 +220,23 @@ export default function Page() {
         </div>
       </section>
       <section id="testimonials" className="px-6">
-        <div className="p-5 text-center mb-8 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold sm:text-5xl">Review</h2>
-          <p className="text-muted-foreground text-lg">
-            The comments and feedback I received reminded me: every project, no matter how small, has the potential to make an impact. This is not the end, but rather the beginning of continued improvement.
-          </p>
-        </div>
+        <div style={{ height: '600px', position: 'relative' }}>
+          <TestimonialSection/>
 
-        <div style={{  position: 'relative' }}>
-  <Carousel
-    baseWidth={800}
-    autoplay={true}
-    autoplayDelay={3000}
-    pauseOnHover={true}
-    loop={true}
-    round={false}
-  />
-</div>
+        </div>
       </section>
 
-      <section className=" w-full py-[10%]" id="gallery">
+      <section className="w-full  text-center" id="gallery">
+        <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-3" >
+                  Galerry
+          </div>
         <h1 className="text-center text-3xl font-bold sm:text-5xl">My Gallery</h1>
-        <div style={{ height: '600px', position: 'relative' }}>
-          <CircularGallery bend={3} borderRadius={0.05} scrollEase={0.02} />
-        </div>
+        <RollingGallery autoplay={true} pauseOnHover={true} />
       </section>
 
       <section
         id="contact"
-        className="relative py-20  to-background"
+        className="relative py-0  to-background"
       >
         <div className="text-center space-y-6 max-w-2xl mx-auto px-6">
           <h2 className="text-3xl font-bold sm:text-5xl">
