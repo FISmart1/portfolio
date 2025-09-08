@@ -13,15 +13,7 @@
   z-index: 10;
 }
 
-.gallery-gradient-left {
-  left: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #060010 100%);
-}
 
-.gallery-gradient-right {
-  right: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #060010 100%);
-}
 
 .gallery-content {
   display: flex;
