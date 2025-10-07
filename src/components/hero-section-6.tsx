@@ -42,7 +42,7 @@ export function HeroSection() {
                 <a
                   href="/cv.pdf"
                   download="CV-Yusuf.pdf"
-                  className="rounded-lg bg-black px-6 py-3 text-white dark:bg-white dark:text-black font-semibold shadow-md hover:bg-transparent hover:text-white transition"
+                  className="rounded-lg bg-black px-6 py-3 text-white dark:bg-white dark:text-black font-semibold shadow-md hover:bg-transparent hover:text-black transition"
                 >
                   Download CV
                 </a>
