@@ -285,7 +285,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           <div className="pc-glare" />
           <div className="pc-content pc-avatar-content">
             <img
-              className="avatar"
+              className="avatar "
               src='./me.png'
               alt={`${name || 'User'} avatar`}
               loading="lazy"
@@ -309,7 +309,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                       }}
                     />
                   </div>
-                  <div className="pc-user-text">
+                  <div className="pc-user-text text-black">
                     <div className="pc-handle">@{handle}</div>
                     <div className="pc-status">{status}</div>
                   </div>
@@ -325,12 +325,6 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                 </button>
               </div>
             )}
-          </div>
-          <div className="pc-content">
-            <div className="pc-details">
-              <h3>{name}</h3>
-              <p>{title}</p>
-            </div>
           </div>
         </div>
       </section>

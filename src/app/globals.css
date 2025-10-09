@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+body
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* hilangkan jarak bawah default img */
+}
+
+.pc-user-info {
+  background-color: #000;
+  color: #000000;
+  padding: 12px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(0px);
+}
+
+.pc-user-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pc-mini-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pc-contact-btn {
+  background-color: #000000;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pc-contact-btn:hover {
+  background-color: #ccc;
+}
+
+
 @layer base {
     :root {
       --background: 0 0% 100%;

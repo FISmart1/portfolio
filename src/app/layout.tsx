@@ -4,13 +4,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import "./globals.css";
 
-const fontSans = FontSans({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight: ["400", "600", "700"], // pilih bobot sesuai kebutuhan
 });
 
 export const metadata: Metadata = {
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-4xl mx-auto py-2 sm:py-2 px-6",
-          fontSans.variable
+          poppins.className // ✅ ini yang benar
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
