@@ -188,14 +188,14 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Bazma Chiper",
-      href: "https://chiper.smktibazma.com/",
-      dates: "OCtober 2024 - December 2024",
+      title: "SMK TI Bazma",
+      href: "https://smktibazma.sch.id/",
+      dates: "August 2025 - December 2025",
       active: true,
       description:
-        "Bazma Chiper is a web-based platform designed to encrypt and decrypt text messages. Using a special cipher-like encoding system, Bazma Chiper helps maintain information confidentiality and prevent unauthorized access. This website can be used as a learning tool for cryptography and as a practical tool for protecting digital messages.",
+        "Lead the development of the SMK TI Bazma main website, creating a centralized platform to showcase student projects, experiences, school information, and digital services.",
       technologies: [
-        "React.js",
+        "Next.js",
         "Javascript",
         "TailwindCSS",
 
@@ -207,7 +207,30 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/chiper.png",
+      image: "/websmk.png",
+      video: "",
+    },
+    {
+      title: "HIMPANA",
+      href: "https://himpana.com/",
+      dates: "August 2025 - December 2025",
+      active: true,
+      description:
+        "Lead the development of the SMK TI Bazma main website, creating a centralized platform to showcase student projects, experiences, school information, and digital services.",
+      technologies: [
+        "Next.js",
+        "Javascript",
+        "TailwindCSS",
+
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://chiper.smktibazma.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/himpana.png",
       video: "",
     },
     
