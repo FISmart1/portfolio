@@ -32,12 +32,16 @@ export const DATA = {
     "TailwindCSS",
     "Bootstrap",
     "Figma",
-    "Capcut"
+    "Capcut",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "https://best.smktibazma.com", icon: "/best.png", label: "BEST" },
-    { href: "https://chiper.smktibazma.com", icon: "/sekolah.png", label: "Chiper bazma" },
+    {
+      href: "https://chiper.smktibazma.com",
+      icon: "/sekolah.png",
+      label: "Chiper bazma",
+    },
   ],
   contact: {
     email: "yusufftibazma@gmail.com",
@@ -124,7 +128,7 @@ export const DATA = {
         "Manage organizational finances, prepare financial reports, and ensure activity budgets run effectively and transparently.",
     },
   ],
-  education: [ 
+  education: [
     {
       school: "SMK TI BAZMA",
       href: "https://smktibazma.com",
@@ -133,7 +137,6 @@ export const DATA = {
       start: "2023",
       end: "now",
     },
-    
   ],
   projects: [
     {
@@ -160,31 +163,6 @@ export const DATA = {
         },
       ],
       image: "/projectbest.png",
-      video:
-        "",
-    },
-    {
-      title: "Platform Berbagi",
-      href: "https://berbagi.smktibazma.com",
-      dates: "August 2025 - August 2025",
-      active: true,
-      description:
-        "The website berbagi.smktibazma.com is a digital platform to promote transparency and accuracy in the distribution of social assistance. Through this system, recipients can be verified using the QR code printed on the coupons they distribute, reducing the potential for errors or data misuse.",
-      technologies: [
-        "PHP",
-        "Laravel",
-        "TailwindCSS",
-        "MySql",
-
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://berbagi.smktibazma.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/berbagi.png",
       video: "",
     },
     {
@@ -194,16 +172,11 @@ export const DATA = {
       active: true,
       description:
         "Lead the development of the SMK TI Bazma main website, creating a centralized platform to showcase student projects, experiences, school information, and digital services.",
-      technologies: [
-        "Next.js",
-        "Javascript",
-        "TailwindCSS",
-
-      ],
+      technologies: ["Next.js", "Javascript", "TailwindCSS"],
       links: [
         {
           type: "Website",
-          href: "https://chiper.smktibazma.com/",
+          href: "https://smktibazma.sch.id/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -213,48 +186,111 @@ export const DATA = {
     {
       title: "HIMPANA",
       href: "https://himpana.com/",
-      dates: "August 2025 - December 2025",
+      dates: "October 2025 - November 2025",
       active: true,
       description:
-        "Lead the development of the SMK TI Bazma main website, creating a centralized platform to showcase student projects, experiences, school information, and digital services.",
-      technologies: [
-        "Next.js",
-        "Javascript",
-        "TailwindCSS",
-
-      ],
+        "The HIMPANA website is a digital platform that provides information about the HIMPANA community, including activities, news, and services for its members. It also serves as a platform for online membership registration. The website is designed to facilitate access to information and improve connectivity between members in one integrated, user-friendly system.",
+      technologies: ["Next.js", "Javascript", "TailwindCSS"],
       links: [
         {
           type: "Website",
-          href: "https://chiper.smktibazma.com/",
+          href: "https://himpana.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/himpana.png",
       video: "",
     },
-    
+    {
+      title: "SPMB(Sistem Penerimaan Murid Baru)",
+      href: "https://spmb.smktibazma.sch.id/",
+      dates: "November 2025 - November 2025",
+      active: true,
+      description:
+        "Lead the development of the SMK TI Bazma main website, creating a centralized platform to showcase student projects, experiences, school information, and digital services.",
+      technologies: ["Next.js", "Javascript", "Express.js"],
+      links: [
+        {
+          type: "Website",
+          href: "https://spmb.smktibazma.sch.id/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/spmb.png",
+      video: "",
+    },
+    {
+      title: "LINAS(Library Nasional)",
+      href: "https://spmb.smktibazma.sch.id/",
+      dates: "January 2026 - February 2026",
+      active: true,
+      description:
+        "Developed Linas, a mobile app that helps users find books across integrated libraries in Indonesia, featuring AI-powered recommendations based on users’ preferences and mood.",
+      technologies: ["Figma", "Canva", "Design Thinking"],
+      links: [
+        {
+          type: "UI/UX Design",
+          href: "https://www.figma.com/design/FrOTwE5X0ymEEXsDPDdb4V/Bissmillah-Ke-Bandung?node-id=0-1&t=TcBfvum9YmfTwXyW-1",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/linas.png",
+      video: "",
+    },
+    {
+      title: "KajianQu",
+      href: "https://spmb.smktibazma.sch.id/",
+      dates: "March 2026 - March 2026",
+      active: true,
+      description:
+        "Developed a Qur’an learning mobile app (KajianQu) with AI-powered features for recitation correction and memorization (hafalan) submission, helping users improve accuracy and consistency in learning.",
+      technologies: ["Figma", "Canva", "Design Thinking"],
+      links: [
+        {
+          type: "UI/UX Design",
+          href: "https://www.figma.com/design/cQEHbUb5EeWBz1SX7C0wJX/KajianKu?node-id=185-54579&t=rtIxgE7FjxOEKwRH-1",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/kajianqu.png",
+      video: "",
+    },
+    {
+      title: "BantuIn",
+      href: "https://spmb.smktibazma.sch.id/",
+      dates: "March 2026 - April 2026",
+      active: true,
+      description:
+        "AI-powered service application for real-time location-based worker search with smart matching and emergency service features.",
+      technologies: ["Figma", "Canva", "Design Thinking"],
+      links: [
+        {
+          type: "UI/UX Design",
+          href: "https://www.figma.com/design/9QSSHAZPPLfYt5uv29HhV2/OTW-Yogyakarta-?node-id=0-1&t=CnpZBjZ3D3Zdknrh-1",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/bantuin.png",
+      video: "",
+    },
   ],
   hackathons: [
+    {
+      title: "Gold Medal – Ganesha Olimpiade (Top 10 National)",
+      dates: "August 2024",
+      location: "Ganesha Olimpiade",
+      description:
+        "Awarded a gold medal and ranked in the Top 10 at the OCC competition, recognized for excellence in informatika",
+      image: "/ganesha.jpg",
+      links: [],
+    },
     {
       title: "LSP Sertifikasi Desain Multimedia Muda",
       dates: "25 November  - 30 November 2024",
       location: "Online",
       description:
         "Certified in Junior Multimedia Design covering essential skills in graphic design, video editing, animation, and digital media production. This certification verifies competency in applying creative concepts, using design software tools, and producing multimedia content that meets industry standards.",
-      image:
-        "/lsp.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Teladan Akademik & Sopan Santun di SMK TI BAZMA",
-      dates: "2023 - 2024 - 2025",
-      location: "SMK TI BAZMA",
-      description:
-        "Recognized for consistent academic achievements and outstanding manners, serving as a role model for fellow students.",
-      image:
-        "/sekolah.png",
+      image: "/lsp.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
@@ -265,21 +301,58 @@ export const DATA = {
       description:
         "Certified in JavaScript (Basic) by HackerRank, demonstrating proficiency in fundamental concepts such as data types, functions, loops, conditional statements, and problem-solving using JavaScript.",
       icon: "public",
-      image:
-        "/rank.png",
+      image: "/rank.png",
       links: [],
     },
     {
-      title: "Gold Medal – OCC (Top 10 National)",
-      dates: "February 3rd - 4th, 2018",
-      location: "Olimpiade Cerdas Cermat",
+      title: "Teladan Akademik & Sopan Santun di SMK TI BAZMA",
+      dates: "2023 - 2024 - 2025",
+      location: "SMK TI BAZMA",
       description:
-        "Awarded a gold medal and ranked in the Top 10 at the OCC competition, recognized for excellence in informatika",
-      image:
-        "/gold.png",
-      links: [
-      ],
+        "Recognized for consistent academic achievements and outstanding manners, serving as a role model for fellow students.",
+      image: "/sekolah.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
     },
-    
+    {
+      title: "Certificate of Competence - Introduction to Information Security",
+      dates: "May 2025",
+      location: "CyberAcademy",
+      description:
+        "Certificate of Competence in Introduction to Information Security by Cyber Academy Indonesia, demonstrating foundational knowledge in cybersecurity principles, data protection, and information security practices.",
+      image: "/cyber.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
+    {
+      title: "Certificate of Participation - The Amazing You 5",
+      dates: "Jun 2025",
+      location: "ESQ, Dr. (H.C) Ary Ginanjar Agustian",
+      description:
+        "Certificate of Participation in The Amazing You 5, recognizing active involvement in a personal development program focused on self-growth, mindset, and motivation.",
+      image: "/esq.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
+    {
+      title: "ASEAN Data Science Explorers – Enablement Session (SAP Analytics Cloud)",
+      dates: "Jun 2025",
+      location: "ASEAN Foundation & SAP",
+      description:
+        "Certificate of Participation in ASEAN Data Science Explorers – Enablement Session, demonstrating foundational skills in data analysis and visualization using SAP Analytics Cloud.",
+      image: "/sap.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
+    {
+      title: "Certificate of Competition – Jagoan Hosting Infra Competition",
+      dates: "Nov 2025",
+      location: "Jagoan Hosting & Maspion IT",
+      description:
+        "Certificate of Competition in Jagoan Hosting Infra Competition by Jagoan Hosting, showcasing skills in server infrastructure, deployment, and system optimization.",
+      image: "/jhic.jpg",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
   ],
 } as const;
