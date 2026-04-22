@@ -10,19 +10,16 @@ import { Particles } from "@/components/magicui/particles";
 import { Confetti } from "@/components/magicui/confetti";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
-import { Instagram } from 'lucide-react';
+import { Instagram } from "lucide-react";
 import { Highlighter } from "@/components/magicui/highlighter";
-import TestimonialSection from "@/components/testimoni"
-import RollingGallery from '@/components/RollingGallery'
-
+import TestimonialSection from "@/components/testimoni";
+import RollingGallery from "@/components/RollingGallery";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-  
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-
       <ScrollProgress />
 
       <SmoothCursor />
@@ -55,17 +52,31 @@ export default function Page() {
             <p className="prose prose-neutral dark:prose-invert max-w-none text-lg text-black dark:text-white text-center">
               <Highlighter action="highlight" color="#60a5fa">
                 As a vocational high school student in Information Technology
-              </Highlighter>, I have developed skills in <Highlighter color="#ec4899" action="underline">
-                web application
-                development, database management, and system integration
-              </Highlighter>. Through <Highlighter action="underline" color="#6366f1">school projects</Highlighter> and <Highlighter action="underline" color="#6366f1">independent practice</Highlighter>,
-              I am experienced in creating <Highlighter action="underline" color="#60a5fa">efficient and user-friendly digital solutions</Highlighter>. I am committed to continuously
-              improving my abilities to make the <Highlighter action="underline" color="#ec4899">best contribution to organizations and teams</Highlighter>.
+              </Highlighter>
+              , I have developed skills in{" "}
+              <Highlighter color="#ec4899" action="underline">
+                web application development, database management, and system
+                integration
+              </Highlighter>
+              . Through{" "}
+              <Highlighter action="underline" color="#6366f1">
+                school projects
+              </Highlighter>{" "}
+              and{" "}
+              <Highlighter action="underline" color="#6366f1">
+                independent practice
+              </Highlighter>
+              , I am experienced in creating{" "}
+              <Highlighter action="underline" color="#60a5fa">
+                efficient and user-friendly digital solutions
+              </Highlighter>
+              . I am committed to continuously improving my abilities to make
+              the{" "}
+              <Highlighter action="underline" color="#ec4899">
+                best contribution to organizations and teams
+              </Highlighter>
+              .
             </p>
-
-
-
-
           </div>
         </BlurFade>
       </section>
@@ -131,8 +142,6 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
-
-
         </div>
       </section>
 
@@ -186,14 +195,12 @@ export default function Page() {
                   Achievement & Certification
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  Proof of My Skills & Dedication
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  As Head of the BEST Website Developer
-                  Team at SMK TI BAZMA, I led the creation of
-                  the school’s official website. Working with peers,
-                  we turned ideas into a functional platform, while I
-                  sharpened both my technical and leadership skills.
+                  These certifications and achievements represent my dedication
+                  to continuous learning, skill development, and real-world
+                  problem solving.
                 </p>
               </div>
             </div>
@@ -220,28 +227,24 @@ export default function Page() {
         </div>
       </section>
       <section id="testimonials" className="px-6">
-        <div style={{ height: '600px', position: 'relative' }}>
-          <TestimonialSection/>
-
+        <div style={{ height: "600px", position: "relative" }}>
+          <TestimonialSection />
         </div>
       </section>
 
       <section className="w-full  text-center" id="gallery">
-        <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-3" >
-                  Galerry
-          </div>
-        <h1 className="text-center text-3xl font-bold sm:text-5xl">My Gallery</h1>
+        <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-3">
+          Galerry
+        </div>
+        <h1 className="text-center text-3xl font-bold sm:text-5xl">
+          My Gallery
+        </h1>
         <RollingGallery autoplay={true} pauseOnHover={true} />
       </section>
 
-      <section
-        id="contact"
-        className="relative py-0  to-background"
-      >
+      <section id="contact" className="relative py-0  to-background">
         <div className="text-center space-y-6 max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl font-bold sm:text-5xl">
-            Get in Touch
-          </h2>
+          <h2 className="text-3xl font-bold sm:text-5xl">Get in Touch</h2>
           <p className="text-muted-foreground text-lg">
             Want to chat? Just shoot me a{" "}
             <Link
@@ -266,7 +269,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }

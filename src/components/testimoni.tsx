@@ -15,7 +15,7 @@ const testimonials = [
   {
     id: 2,
     name: "Muhammad Dzikri Fauzan, S.Kom",
-    role: "Developer, TechnoIDKetua Program Keahlian SIJA",
+    role: "Developer, Ketua Program Keahlian SIJA",
     text: "Tim ini benar-benar ahli di bidangnya. Komunikasi jelas, solusi tepat, dan hasil kerja berkualitas.",
     image: "/dzikri.jpg",
   },
@@ -44,10 +44,10 @@ export default function TestimonialSection() {
     <section className="w-full from-gray-50 via-white to-gray-100 py-16 px-6 md:px-12">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 dark:text-white">
-          Apa Kata Mereka?
+          What Do They Say?
         </h2>
         <p className="text-gray-600 mb-12 dark:text-white">
-          Inilah pengalaman dan kesan klien setelah berkolaborasi bersama saya dalam berbagai proyek.
+          Here are the experiences and feedback from clients who have collaborated with me on various projects.
         </p>
 
         {/* Card */}

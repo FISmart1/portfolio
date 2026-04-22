@@ -25,7 +25,6 @@ export const DATA = {
     "PHP",
     "Laravel",
     "Canva",
-    "C++",
     "Git",
     "GitHub",
     "Microsoft Office",
@@ -38,9 +37,19 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "https://best.smktibazma.com", icon: "/best.png", label: "BEST" },
     {
-      href: "https://chiper.smktibazma.com",
+      href: "https://smktibazma.sch.id",
       icon: "/sekolah.png",
-      label: "Chiper bazma",
+      label: "SMK TI Bazma",
+    },
+    {
+      href: "https://himpana.com",
+      icon: "/logo-himpana.png",
+      label: "HIMPANA",
+    },
+    {
+      href: "https://spmb.smktibazma.sch.id",
+      icon: "/logo.webp",
+      label: "SPMB",
     },
   ],
   contact: {
@@ -79,6 +88,18 @@ export const DATA = {
   },
 
   work: [
+        {
+      company: "OSIS",
+      href: "https://atomic.finance",
+      badges: [],
+      location: "Remote",
+      title: "Finance",
+      logoUrl: "/osis.png",
+      start: "August 2024",
+      end: "October 2025",
+      description:
+        "Manage organizational finances, prepare financial reports, and ensure activity budgets run effectively and transparently.",
+    },
     {
       company: "BEST",
       href: "https://best.smktibazma.com",
@@ -104,28 +125,16 @@ export const DATA = {
         "Led the Website Development Team of SMK TI BAZMA, responsible for project coordination, coding, and ensuring optimal website performance.",
     },
     {
-      company: "MCROBO",
+      company: "Mudabbir",
       href: "https://atomic.finance",
       badges: [],
       location: "Remote",
-      title: "Vice Chairman",
-      logoUrl: "/mcrobo.png",
-      start: "August 2025",
+      title: "Cleaning and Maintenance Division",
+      logoUrl: "/mudabbir.jpg",
+      start: "September 2025",
       end: "now",
       description:
-        "Entrusted with the role of Vice Chairman of the Robotics Club, responsible for assisting in leadership, coordinating activities, and supporting members in achieving the club’s goals.",
-    },
-    {
-      company: "OSIS",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Remote",
-      title: "Finance",
-      logoUrl: "/osis.png",
-      start: "August 2024",
-      end: "now",
-      description:
-        "Manage organizational finances, prepare financial reports, and ensure activity budgets run effectively and transparently.",
+        "Maintained cleanliness and order within the dormitory, organized cleaning schedules, and ensured a comfortable and hygienic environment for all residents.",
     },
   ],
   education: [
