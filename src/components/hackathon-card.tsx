@@ -1,3 +1,5 @@
+"use client";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
@@ -8,6 +10,7 @@ interface Props {
   dates: string;
   location: string;
   image?: string;
+  href?: string; // ⬅️ tambahkan ini
   links?: readonly {
     icon: React.ReactNode;
     title: string;
@@ -21,6 +24,7 @@ export function HackathonCard({
   dates,
   location,
   image,
+  href,
   links,
 }: Props) {
   return (
@@ -35,7 +39,15 @@ export function HackathonCard({
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
-        <h2 className="font-semibold leading-none">{title}</h2>
+        <h2 className="font-semibold leading-none">
+          {href ? (
+            <Link href={href} className="hover:underline">
+              {title}
+            </Link>
+          ) : (
+            title
+          )}
+        </h2>
         {location && (
           <p className="text-sm text-muted-foreground">{location}</p>
         )}

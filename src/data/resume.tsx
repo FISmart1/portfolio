@@ -229,7 +229,25 @@ export const DATA = {
       video: "",
     },
     {
-      title: "LINAS(Library Nasional)",
+      title: "Progify - Finalis, Dinamik UPI 2025",
+      href: "https://spmb.smktibazma.sch.id/",
+      dates: "November 2025 - Desember 2025",
+      active: true,
+      description:
+        "Developed Progify, a web-based system for verifying aid recipients using QR codes, improving security and efficiency in the distribution process.",
+      technologies: ["Figma", "Canva", "Design Thinking"],
+      links: [
+        {
+          type: "UI/UX Design",
+          href: "https://www.figma.com/design/5UX83uj2w0LUuFmn7WUWcS/Untitled?node-id=0-1&t=9BvAaUG4WsnlMwUG-1",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/progify.png",
+      video: "",
+    },
+    {
+      title: "LINAS(Library Nasional) - Finalis, WiseInnovera 2026",
       href: "https://spmb.smktibazma.sch.id/",
       dates: "January 2026 - February 2026",
       active: true,
@@ -265,7 +283,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "BantuIn",
+      title: "BantuIn = Finalis, FindIT 2026",
       href: "https://spmb.smktibazma.sch.id/",
       dates: "March 2026 - April 2026",
       active: true,
@@ -291,7 +309,13 @@ export const DATA = {
       description:
         "Awarded a gold medal and ranked in the Top 10 at the OCC competition, recognized for excellence in informatika",
       image: "/ganesha.jpg",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://drive.google.com/file/d/1NYepLkac7S0YyshJGhlxTd1oXxmjlLka/view?usp=sharing",
+        },
+      ],
+      href: "https://ganeshaolimpiade.com/kompetisi/occ-2024",
     },
     {
       title: "LSP Sertifikasi Desain Multimedia Muda",
@@ -301,7 +325,12 @@ export const DATA = {
         "Certified in Junior Multimedia Design covering essential skills in graphic design, video editing, animation, and digital media production. This certification verifies competency in applying creative concepts, using design software tools, and producing multimedia content that meets industry standards.",
       image: "/lsp.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://drive.google.com/file/d/1e00y0SAnaW8Snc0fruIl58kqAvWE0H4h/view?usp=sharing",
+        },
+      ],
     },
     {
       title: "Certificate basic Java Script",
@@ -311,7 +340,12 @@ export const DATA = {
         "Certified in JavaScript (Basic) by HackerRank, demonstrating proficiency in fundamental concepts such as data types, functions, loops, conditional statements, and problem-solving using JavaScript.",
       icon: "public",
       image: "/rank.png",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://www.hackerrank.com/certificates/iframe/6d8c82c4adfa",
+        },
+      ],
     },
     {
       title: "Teladan Akademik & Sopan Santun di SMK TI BAZMA",
@@ -321,7 +355,12 @@ export const DATA = {
         "Recognized for consistent academic achievements and outstanding manners, serving as a role model for fellow students.",
       image: "/sekolah.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://drive.google.com/file/d/170KmekEUA0VrzScY4h7AFG2QqSvv5Epu/view?usp=sharing",
+        },
+      ],
     },
     {
       title: "Certificate of Competence - Introduction to Information Security",
@@ -331,7 +370,12 @@ export const DATA = {
         "Certificate of Competence in Introduction to Information Security by Cyber Academy Indonesia, demonstrating foundational knowledge in cybersecurity principles, data protection, and information security practices.",
       image: "/cyber.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://www.cyberacademy.id/certificate/PKMI01107253204",
+        },
+      ],
     },
     {
       title: "Certificate of Participation - The Amazing You 5",
@@ -341,7 +385,12 @@ export const DATA = {
         "Certificate of Participation in The Amazing You 5, recognizing active involvement in a personal development program focused on self-growth, mindset, and motivation.",
       image: "/esq.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://drive.google.com/file/d/1gXXn3s0BapYQMbpiVZx80tVTC3JIRqDC/view?usp=sharing",
+        },
+      ],
     },
     {
       title: "ASEAN Data Science Explorers – Enablement Session (SAP Analytics Cloud)",
@@ -351,7 +400,12 @@ export const DATA = {
         "Certificate of Participation in ASEAN Data Science Explorers – Enablement Session, demonstrating foundational skills in data analysis and visualization using SAP Analytics Cloud.",
       image: "/sap.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://drive.google.com/file/d/1TToU9FeRt3l4g0cAx46_PjOd6dcrcxWS/view?usp=sharing",
+        },
+      ],
     },
     {
       title: "Certificate of Competition – Jagoan Hosting Infra Competition",
@@ -361,7 +415,12 @@ export const DATA = {
         "Certificate of Competition in Jagoan Hosting Infra Competition by Jagoan Hosting, showcasing skills in server infrastructure, deployment, and system optimization.",
       image: "/jhic.jpg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [
+        {
+          title: "Refernce",
+          href: "https://drive.google.com/file/d/1g9wLJXonLyUt-fkgJB1G9oXcEt84NeyS/view?usp=sharing",
+        },
+      ],
     },
   ],
 } as const;

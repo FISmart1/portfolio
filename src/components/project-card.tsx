@@ -84,7 +84,7 @@ export function ProjectCard({
       </CardHeader>
       <CardContent className="mt-auto flex flex-col px-2">
         {tags && tags.length > 0 && (
-          <div className="mt-2 flex flex-wrap gap-1">
+          <div className="mt-2 mb-2 flex flex-wrap gap-1">
             {tags?.map((tag) => (
               <Badge
                 className="px-1 py-0 text-[10px]"
