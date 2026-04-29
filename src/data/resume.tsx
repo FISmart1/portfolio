@@ -282,24 +282,6 @@ export const DATA = {
       image: "/kajianqu.png",
       video: "",
     },
-    {
-      title: "BantuIn = Finalis, FindIT 2026",
-      href: "https://spmb.smktibazma.sch.id/",
-      dates: "March 2026 - April 2026",
-      active: true,
-      description:
-        "AI-powered service application for real-time location-based worker search with smart matching and emergency service features.",
-      technologies: ["Figma", "Canva", "Design Thinking"],
-      links: [
-        {
-          type: "UI/UX Design",
-          href: "https://www.figma.com/design/9QSSHAZPPLfYt5uv29HhV2/OTW-Yogyakarta-?node-id=0-1&t=CnpZBjZ3D3Zdknrh-1",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/bantuin.png",
-      video: "",
-    },
   ],
   hackathons: [
     {
