@@ -140,7 +140,7 @@ export const DATA = {
   education: [
     {
       school: "SMK TI BAZMA",
-      href: "https://smktibazma.com",
+      href: "https://smktibazma.sch.id",
       degree: "Vocational High School",
       logoUrl: "/sekolah.png",
       start: "2023",
