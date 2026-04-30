@@ -158,7 +158,7 @@ export default function TestimonialSection() {
               </motion.div>
 
               {/* Testimonial Text */}
-              <blockquote className="text-gray-700 dark:text-gray-200 text-lg sm:text-xl leading-relaxed mb-8 font-medium">"{current.text}"</blockquote>
+              <blockquote className="text-gray-700 dark:text-gray-200 text-lg sm:text-xl leading-relaxed mb-8 font-medium">&quot;{current.text}&quot;</blockquote>
 
               {/* Author Section */}
               <div className="flex items-center justify-between flex-wrap gap-4">
