@@ -1,33 +1,34 @@
-"use client";
+'use client';
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useCallback } from "react";
-import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useCallback } from 'react';
+import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const testimonials = [
   {
     id: 1,
-    name: "Ristina Eka Salsabila, S.kom",
-    role: "Tenaga Pendidik Bidang Sistem Aplikasi dan Service (SAAS)",
-    text: "Pelayanan sangat luar biasa! Prosesnya cepat, profesional, dan hasilnya jauh melampaui ekspektasi saya.",
-    image: "/bila.jpeg",
-    gradient: "from-blue-500 to-cyan-400",
+    name: 'Ristina Eka Salsabila, S.kom',
+    role: 'Tenaga Pendidik Bidang Sistem Aplikasi dan Service (SAAS)',
+    text: 'Pelayanan sangat luar biasa! Prosesnya cepat, profesional, dan hasilnya jauh melampaui ekspektasi saya.',
+    image: '/bila.jpeg',
+    gradient: 'from-blue-500 to-cyan-400',
   },
   {
     id: 2,
-    name: "Muhammad Dzikri Fauzan, S.Kom",
-    role: "Developer, Ketua Program Keahlian SIJA",
-    text: "Tim ini benar-benar ahli di bidangnya. Komunikasi jelas, solusi tepat, dan hasil kerja berkualitas.",
-    image: "/dzikri.jpg",
-    gradient: "from-violet-500 to-purple-400",
+    name: 'Muhammad Dzikri Fauzan, S.Kom',
+    role: 'Developer, Ketua Program Keahlian SIJA',
+    text: 'Tim ini benar-benar ahli di bidangnya. Komunikasi jelas, solusi tepat, dan hasil kerja berkualitas.',
+    image: '/dzikri.jpg',
+    gradient: 'from-violet-500 to-purple-400',
   },
   {
     id: 3,
-    name: "Fatimah Azzahra, S.Si",
-    role: "Tenaga Pendidik Bidang Design & Informatika",
-    text: "Pengalaman bekerja sama sangat menyenangkan. Saya pasti akan merekomendasikan ke rekan bisnis lainnya.",
-    image: "/mimah.png",
-    gradient: "from-pink-500 to-rose-400",
+    name: 'Fatimah Azzahra, S.Si',
+    role: 'Tenaga Pendidik Bidang Design & Informatika',
+    text: 'Pengalaman bekerja sama sangat menyenangkan. Saya pasti akan merekomendasikan ke rekan bisnis lainnya.',
+    image: '/mimah.png',
+    gradient: 'from-pink-500 to-rose-400',
   },
 ];
 
@@ -43,7 +44,7 @@ const cardVariants = {
     x: 0,
     scale: 1,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 300,
       damping: 30,
       mass: 0.8,
@@ -62,7 +63,7 @@ const quoteVariants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { delay: 0.2, type: "spring", stiffness: 200 },
+    transition: { delay: 0.2, type: 'spring', stiffness: 200 },
   },
 };
 
@@ -114,53 +115,30 @@ export default function TestimonialSection() {
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") nextTestimonial();
-      if (e.key === "ArrowLeft") prevTestimonial();
+      if (e.key === 'ArrowRight') nextTestimonial();
+      if (e.key === 'ArrowLeft') prevTestimonial();
     };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [nextTestimonial, prevTestimonial]);
 
   const current = testimonials[active];
 
   return (
     <section className="relative w-full py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-
-
       <div className="relative max-w-5xl mx-auto">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
-        >
-          <span className="inline-block px-4 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-4">
-            Testimonials
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            What People Say
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-base sm:text-lg">
-            Real experiences from clients and partners who have collaborated with us on various projects.
-          </p>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="text-center mb-12">
+          <span className="inline-block px-4 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-4">Testimonials</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">What People Say</h2>
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-base sm:text-lg">Real experiences from clients and partners who have collaborated with us on various projects.</p>
         </motion.div>
 
         {/* Testimonial Card Container */}
-        <div
-          className="relative"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
+        <div className="relative" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
           {/* Progress bar */}
           <div className="absolute -top-3 left-0 right-0 h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mx-4 sm:mx-0">
-            <motion.div
-              className={`h-full bg-gradient-to-r ${current.gradient}`}
-              initial={{ width: 0 }}
-              animate={{ width: `${progress}%` }}
-              transition={{ ease: "linear", duration: 0.1 }}
-            />
+            <motion.div className={`h-full bg-gradient-to-r ${current.gradient}`} initial={{ width: 0 }} animate={{ width: `${progress}%` }} transition={{ ease: 'linear', duration: 0.1 }} />
           </div>
 
           {/* Main Card */}
@@ -175,50 +153,38 @@ export default function TestimonialSection() {
               className="relative bg-white dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl shadow-gray-200/50 dark:shadow-gray-900/50"
             >
               {/* Quote Icon */}
-              <motion.div
-                variants={quoteVariants}
-                initial="hidden"
-                animate="visible"
-                className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br ${current.gradient} text-white mb-6`}
-              >
+              <motion.div variants={quoteVariants} initial="hidden" animate="visible" className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br ${current.gradient} text-white mb-6`}>
                 <FaQuoteLeft className="text-lg" />
               </motion.div>
 
               {/* Testimonial Text */}
-              <blockquote className="text-gray-700 dark:text-gray-200 text-lg sm:text-xl leading-relaxed mb-8 font-medium">
-                "{current.text}"
-              </blockquote>
+              <blockquote className="text-gray-700 dark:text-gray-200 text-lg sm:text-xl leading-relaxed mb-8 font-medium">"{current.text}"</blockquote>
 
               {/* Author Section */}
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-4">
                   <div className="relative">
                     <div className={`absolute inset-0 bg-gradient-to-br ${current.gradient} rounded-full blur-sm opacity-50`} />
-                    <img
+                    <Image
                       src={current.image}
                       alt={current.name}
-                      className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-white dark:border-gray-700 shadow-lg"
+                      width={64}
+                      height={64}
+                      className="w-14 h-14 rounded-full object-cover border-2 border-white dark:border-gray-700 shadow-lg"
                       loading="lazy"
+                      priority={active === 0} // ✅ Load gambar pertama lebih cepat
                     />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white text-base sm:text-lg">
-                      {current.name}
-                    </h4>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm leading-tight max-w-xs">
-                      {current.role}
-                    </p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-base sm:text-lg">{current.name}</h4>
+                    <p className="text-gray-500 dark:text-gray-400 text-sm leading-tight max-w-xs">{current.role}</p>
                   </div>
                 </div>
 
                 {/* Rating Stars (Optional) */}
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className="w-5 h-5 text-yellow-400 fill-current"
-                      viewBox="0 0 20 20"
-                    >
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
                       <path d="M10 15l-5.878 3.09 1.123-6.545L.5 6.91l6.572-.955L10 0l2.928 5.955 6.572.955-4.745 4.635 1.123 6.545z" />
                     </svg>
                   ))}
@@ -247,13 +213,9 @@ export default function TestimonialSection() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={() => goToTestimonial(index)}
-                  className={`relative h-2 rounded-full transition-all duration-300 ${
-                    active === index
-                      ? `w-8 bg-gradient-to-r ${testimonials[index].gradient}`
-                      : "w-2 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500"
-                  }`}
+                  className={`relative h-2 rounded-full transition-all duration-300 ${active === index ? `w-8 bg-gradient-to-r ${testimonials[index].gradient}` : 'w-2 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'}`}
                   aria-label={`Go to testimonial ${index + 1}`}
-                  aria-current={active === index ? "true" : "false"}
+                  aria-current={active === index ? 'true' : 'false'}
                 />
               ))}
             </div>
@@ -271,17 +233,12 @@ export default function TestimonialSection() {
 
           {/* Counter */}
           <p className="text-center text-gray-500 dark:text-gray-400 text-sm mt-4">
-            <span className="font-semibold text-gray-700 dark:text-gray-200">
-              {active + 1}
-            </span>{" "}
-            of {testimonials.length}
+            <span className="font-semibold text-gray-700 dark:text-gray-200">{active + 1}</span> of {testimonials.length}
           </p>
         </div>
 
         {/* Keyboard hint */}
-        <p className="text-center text-gray-400 dark:text-gray-500 text-xs mt-6 hidden sm:block">
-          Use ← → arrow keys to navigate
-        </p>
+        <p className="text-center text-gray-400 dark:text-gray-500 text-xs mt-6 hidden sm:block">Use ← → arrow keys to navigate</p>
       </div>
     </section>
   );
