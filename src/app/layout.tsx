@@ -5,6 +5,7 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 
 import "./globals.css";
 
@@ -69,6 +70,7 @@ export default function RootLayout({
           </TooltipProvider>
         </ThemeProvider>
       </body>
+      <Analytics />
     </html>
   );
 }
