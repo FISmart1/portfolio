@@ -19,7 +19,6 @@ export const DATA = {
     "JavaScript",
     "Express.js",
     "Node.js",
-    "Python",
     "MySql",
     "Proxmox",
     "PHP",
@@ -32,6 +31,7 @@ export const DATA = {
     "Bootstrap",
     "Figma",
     "Capcut",
+    ".NET"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },

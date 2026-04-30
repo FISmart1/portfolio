@@ -226,13 +226,13 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="testimonials" className="px-6">
+      <section id="testimonials " className="px-6 ">
         <div style={{ height: "600px", position: "relative" }}>
           <TestimonialSection />
         </div>
       </section>
 
-      <section className="w-full  text-center" id="gallery">
+      <section className="w-full text-center pt-[30%] sm:pt-[5%]" id="gallery">
         <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-3">
           Galerry
         </div>
