@@ -101,28 +101,16 @@ export const DATA = {
         "Manage organizational finances, prepare financial reports, and ensure activity budgets run effectively and transparently.",
     },
     {
-      company: "BEST",
+      company: "development team",
       href: "https://best.smktibazma.com",
       badges: [],
       location: "Remote",
-      title: "Leader",
+      title: "Team leader",
       logoUrl: "/best.png",
       start: "19 May 2025",
       end: "now",
       description:
-        "Led the BEST Website Developer Team, responsible for coordinating projects, coding, and ensuring optimal website performance.",
-    },
-    {
-      company: "4BYTE",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Remote",
-      title: "Leader",
-      logoUrl: "/4byte.png",
-      start: "21 July 2025",
-      end: "now",
-      description:
-        "Led the Website Development Team of SMK TI BAZMA, responsible for project coordination, coding, and ensuring optimal website performance.",
+        "Led the development and maintenance of SMK TI Bazma’s main website and BEST platform, while also handling customer service support for HIMPANA and assisting as an admin for SPMB 2026 to ensure smooth user experience and service operations.",
     },
     {
       company: "Mudabbir",
