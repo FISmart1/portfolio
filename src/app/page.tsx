@@ -232,7 +232,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="w-full text-center pt-[30%] sm:pt-[5%]" id="gallery">
+      <section className="w-full text-center pt-[60%] sm:pt-[25%]" id="gallery">
         <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-3">
           Galerry
         </div>
