@@ -124,6 +124,18 @@ export const DATA = {
       description:
         "Maintained cleanliness and order within the dormitory, organized cleaning schedules, and ensured a comfortable and hygienic environment for all residents.",
     },
+    {
+      company: "HIMPANA",
+      href: "https://atomic.finance",
+      badges: [],
+      location: "Remote",
+      title: "Admin & Customer Service",
+      logoUrl: "/logo-himpana.png",
+      start: "September 2025",
+      end: "now",
+      description:
+        "Manage the Himpana website and its database which has tens of thousands of member data, and also provide solutions for users who have problems registering on the website.",
+    },
   ],
   education: [
     {
