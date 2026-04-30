@@ -83,7 +83,7 @@ export function HeroSection() {
                   {/* Decorative badge */}
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 rounded-full px-[10%] py-2 shadow-lg border border-gray-200 dark:border-gray-700">
                     <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                      👋 Hi, I'm Yusuf!
+                      👋 Hi, I&apos;m Yusuf!
                     </span>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export function HeroSection() {
                 {/* Social/Contact */}
                 <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
                   <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                    Let's connect & build something amazing!
+                    Let&apos;s connect & build something amazing!
                   </p>
                   <div className="flex gap-3">
                     <a 
