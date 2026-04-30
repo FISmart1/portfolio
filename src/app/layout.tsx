@@ -62,7 +62,7 @@ export default function RootLayout({
           poppins.className // ✅ ini yang benar
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
             {children}
             <Navbar />
